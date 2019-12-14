@@ -159,16 +159,16 @@
     </form>
     <h1>投稿一覧</h1><br>
     <?php
-    $sql = 'SELECT * FROM keijiban_1';
-    $stmt = $pdo->query($sql);
-    $hyouji = $stmt->fetchAll();
-    foreach ($hyouji as $key) {
-      echo $key['id']. ": ";
-      echo $key['name']. "「";
-      echo $key['comment']. "」/";
-      echo $key['comment_time'].'<br>';
-      echo "<hr>";
-    }
+      $sql = 'SELECT * FROM keijiban_1';
+      $stmt = $pdo->query($sql);
+      $hyouji = $stmt->fetchAll();
+      foreach ($hyouji as $key) {
+        echo $key['id']. ": ";
+        echo $key['name']. "「";
+        echo $key['comment']. "」/";
+        echo $key['comment_time'].'<br>';
+        echo "<hr>";
+      }
     ?>
   </body>
 </html>
